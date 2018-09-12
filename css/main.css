@@ -556,7 +556,7 @@ sm 10
 @media only screen and (max-device-width: 480px) {
 
   .container {
-    padding:1em;
+    padding:0;
     margin:0 auto;
     text-align: center;
   }
@@ -580,6 +580,8 @@ sm 10
     float:none;
     margin:0 auto;
   }
+
+
   #header #menu .btn-doe img, #header #menu .btn-propostas img,  {
     display:none;
   }
@@ -588,13 +590,15 @@ sm 10
     text-align: justify;
   }
 
-  #conquistas, #conquistas-ico, #tiles, .conquistas, .minibio, .proposta {
-    width: 100%!important;
+
+  #conquistas, #conquistas-ico {
+    margin:0 auto;
+    width: 90%!important;
+    float:none;
   }
 
-
-  #conquistas-ico img {
-    width: 75%!important;
+   #tiles, .conquistas, .minibio, .proposta, .v-logo, .v-texto {
+    width: 100%!important;
   }
 
   #conquistas .conquista {
@@ -622,9 +626,10 @@ sm 10
 
   #propostas #mosaico .big {
     display:block;
-    padding:0 0 0.5em 0;
-    width: 100%;
+    padding:0 0 0.5em 1em;
+    width: 90%;
     text-align: justify;
+    float:none;
   }
   #zap,#socialmedia,#carossel, .ibagem, .v-foto {
     display:none;
