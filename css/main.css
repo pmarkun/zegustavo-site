@@ -1,0 +1,721 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.col-5 {
+  width:5%;
+  min-width: 50px;
+}
+
+.col-10 {
+  width:10%;
+  min-width:100px;
+}
+
+.col-20 {
+  width:20%;
+  min-width:200px;
+}
+
+.col-25 {
+  width:25%;
+  min-width:250px;
+}
+
+
+.col-30 {
+  width:30%;
+  min-width:300px;
+}
+
+.col-40 {
+  width:40%;
+  min-width:300px;
+}
+
+.col-50 {
+  width:50%;
+}
+
+.col-60 {
+  width:60%;
+}
+
+.col-70 {
+  width:70%;
+}
+
+.col-80 {
+  width:80%;
+}
+
+.spread {
+  margin:0 0 1.5em 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #EFEB8F;
+  font-size:16px;
+}
+
+.container {
+  padding:0 40px 0 40px;
+  background-color: #EFEB8F;
+}
+
+
+
+/*
+zap 30
+logo 40
+btn 20
+sm 10
+
+*/
+
+#header {
+  background-color: #FFFFFF;
+  overflow: visible;
+}
+
+#header #zap {
+    padding-top:40px;
+    float:left;
+}
+
+#header #zap img {
+  width:80%;
+  margin-left:-40px;
+}
+
+#header #logo {
+  padding-top:40px;
+  float:left;
+  text-align:center;
+  z-index: 9999;
+  position: relative;
+
+}
+
+#header #logo img {
+  width:60%;
+  margin-bottom:-80px;
+  z-index: 9999;
+}
+
+#zegustavo {
+  overflow: hidden;
+  float: left;
+}
+
+#header #menu {
+  float: left;
+  text-align: right;
+}
+
+#header #menu .btn-propostas img {
+  height:7em;
+}
+
+#header #menu .btn-doe img {
+  height:7em;
+}
+
+#header #socialmedia {
+  float: right;
+  text-align: right;
+}
+
+#header #socialmedia .btn-sm img {
+  margin-top:1em;
+  margin-right:1em;
+  height:100px;
+}
+
+#header #carossel {
+  padding-top:3.5em;
+  width:100%;
+  clear:both;
+}
+
+#header #carossel img {
+  width:100%;
+}
+
+#zegustavo {
+  margin-bottom:2em;
+}
+
+#zegustavo #bio {
+  clear:both;
+  font-weight: bold;
+}
+
+#zegustavo #bio .ibagem {
+  float:left;
+}
+
+#zegustavo #bio .ibagem img {
+  width:100%;
+}
+
+#zegustavo #bio .minibio {
+  float:left;
+}
+
+#zegustavo #bio .minibio span {
+  display:block;
+  margin:20px;
+  padding:20px;
+}
+
+#zegustavo #conquistas {
+  clear:both;
+  width:100%;
+  font-weight: bold;
+}
+
+#zegustavo #conquistas #conquistas-ico {
+  float:left;
+}
+
+#zegustavo #conquistas #conquistas-ico img {
+  width:90%;
+  margin-top:1em;
+}
+
+#zegustavo #conquistas #tiles {
+  float:left;
+}
+
+.conquista {
+  float:left;
+  width:30%;
+  min-width:220px;
+  height:100%;
+  min-height: 133px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding:0.8em;
+  margin:0.1em;
+  font-size:0.9em;
+}
+
+
+/*.conquista:before {
+  background-repeat: no-repeat;
+  width:80px;
+  height:70px;
+  content:'';
+  display:block;
+  float:left;
+  margin-right:10px;
+}
+
+.c-corrupcao:before {
+  background-image:url('../img/ico-conquistas6.svg');
+}
+.c-cunha:before {
+  background-image:url('../img/ico-conquistas3.svg');
+}
+.c-rede:before {
+  background-image:url('../img/ico-conquistas2.svg');
+}
+.c-moradia:before {
+  background-image:url('../img/ico-conquistas5.svg');
+}
+.c-stf:before {
+  background-image:url('../img/ico-conquistas4.svg');
+}
+.c-impeachment:before {
+  background-image:url('../img/ico-conquistas1.svg');
+}
+*/
+
+#propostas {
+  clear:both;
+}
+
+#mosaico .proposta {
+  width:12.27%;
+  height:18em;
+  float:left;
+  padding:1%;
+  min-width:125px;
+}
+
+#mosaico .small {
+  text-align: center;
+  padding-top:10em;
+  font-size:1em;
+  color:#FFFFFF;
+  float:left;
+  max-width:12em;
+}
+
+#mosaico .small img {
+  clear:both;
+  width:4em;
+  margin-top:-4.5em;
+  margin-bottom:0.5em;
+  height: 100%;
+}
+
+#mosaico .big {
+  height:100%;
+  width:80%;
+  float:right;
+  padding-top:11.5em;
+  font-weight: bold;
+}
+
+.proposta.renovar {
+  background-color: #EA5B20;
+}
+
+.proposta.educacao {
+  background-color: #006C84;
+}
+
+.proposta.fortalecer {
+  background-color: #FCC000;
+
+}
+
+.proposta.privilegio {
+  background-color: #A0AA17;
+
+}
+
+.proposta.ambiental {
+  background-color: #00C884;
+
+}
+
+.proposta.empreender {
+  background-color: #009684;
+
+}
+
+.proposta.desigualdades {
+  background-color: #EA2220;
+
+}
+
+.aberta {
+  width:98% !important;
+}
+
+.big {
+  display:none;
+}
+
+#visao {
+  clear:both;
+  width:100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.v-texto,.v-logo,.v-foto {
+  float:left;
+}
+
+
+.v-logo img {
+  padding:2em 0 0 2em;
+}
+
+.v-texto {
+    text-align: center;
+}
+
+.v-texto p {
+  font-weight: bold;
+  font-size:1.4em;
+  padding-top:2em;
+  margin:0 auto;
+  width:80%;
+  text-align: justify;
+}
+.v-foto img {
+  float:right;
+
+}
+
+#footer {
+  margin:0px;
+  background-color: #FFFFFF;
+  width:100%;
+  padding-top:40px;
+  min-height:200px;
+  clear:both;
+}
+
+#footer .linha {
+  text-align: center;
+  width:100%;
+}
+
+#footer .linha hr {
+  width:80%;
+  margin:0;
+}
+
+#footer #marina18 {
+  padding:2em;
+  float:left;
+}
+
+#footer #info {
+  padding-right:2em;
+  float:right;
+  text-align: right;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-device-width: 480px) {
+
+  .container {
+    padding:1em;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  #header {
+    overflow: hidden;
+  }
+  #logo, .conquista {
+    width:100%;
+    clear:both;
+  }
+
+  #header #logo img {
+    width:80%;
+    clear:both;
+    margin:0 auto 2em 0;
+  }
+
+  #header #menu {
+    width:100%;
+    float:none;
+    margin:0 auto;
+  }
+  #header #menu .btn-doe img, #header #menu .btn-propostas img,  {
+    display:none;
+  }
+
+  #bio {
+    text-align: justify;
+  }
+
+  #conquistas, #conquistas-ico, #tiles, .conquistas, .minibio, .proposta {
+    width: 100%!important;
+  }
+
+
+  #conquistas-ico img {
+    width: 75%!important;
+  }
+
+  #conquistas .conquista {
+    background: none;
+    min-height: 0px;
+  }
+
+  #propostas #mosaico .proposta {
+    width:100%;
+    height:auto;
+  }
+
+  #propostas #mosaico .proposta .small {
+    padding:0.5em 0 0.5em 0;
+    clear:both;
+    float:none;
+    margin:0 auto;
+  }
+
+
+  #propostas #mosaico .proposta .small img {
+    margin:0;
+    clear:both;
+  }
+
+  #propostas #mosaico .big {
+    display:block;
+    padding:0 0 0.5em 0;
+    width: 100%;
+    text-align: justify;
+  }
+  #zap,#socialmedia,#carossel, .ibagem, .v-foto {
+    display:none;
+  }
+
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
