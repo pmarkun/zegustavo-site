@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $(".proposta").mouseover(function (e) {
+  $(".proposta").hover(function (e) {
     console.log(e);
     var item = e.currentTarget
 
