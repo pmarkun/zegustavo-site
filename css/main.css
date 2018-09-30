@@ -630,7 +630,11 @@ sm 10
     text-align: justify;
     float:none;
   }
-  #zap,#socialmedia,#carossel, .ibagem, .v-foto {
+
+  #header #carossel {
+    padding-top:0.5em;
+  }
+  #zap,#socialmedia, .ibagem, .v-foto {
     display:none;
   }
 
