@@ -219,12 +219,11 @@ sm 10
 #header #socialmedia {
   float: right;
   text-align: right;
+  margin-top:1em;
 }
 
 #header #socialmedia .btn-sm img {
-  margin-top:1em;
   margin-right:1em;
-  height:100px;
 }
 
 #header #carossel {
